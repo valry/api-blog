@@ -1,10 +1,9 @@
 # README
 host: https://api-blog-a.herokuapp.com
 
-### Enter user name
+### Enter user name " Milo Hammes "
 
-For example: Milo Hammes
-You can change avatar and preview it before loading
+(You can change avatar and preview it before loading)
 
 
 ### API requests
@@ -36,4 +35,4 @@ heroku config:add CLOUDINARY_URL=cloudinary://API_KEY:API_SECRET@CLOUD_NAME
 (Works only for smtp.mail.ru)
 heroku config:set SMTP_EMAIL=your email SMTP_PASS=your password
 
-Alomstly need to install addon REDISTOGO, and configure sidekiq worker (look in procfile for configure)
+Addon REDISTOGO installation and sidekiq worker configuration are also needed (see procfile for configure sidekiq)
