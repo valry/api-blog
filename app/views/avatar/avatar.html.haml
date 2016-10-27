@@ -1,0 +1,14 @@
+%center
+  - if @user.avatar.image_id.blank?
+    %br Create your avatar
+    .upload-preview
+      %img{width: 300, height: 300}
+    %br
+  - else
+    .upload-preview
+      = cl_image_tag(@user.avatar.image_id, width: 300, height: 300)
+
+  = form_tag create_avatar_path, :method => :post, multipart: true  do
+    %br
+    = cl_image_upload_tag(:image_id)
+    = button_tag 'Go', type: :submit

@@ -1,0 +1,9 @@
+%center
+  - if flash[:notice]
+    .notice{ style: 'color:#FFA500'}
+      = flash[:notice]
+  Enter you nickname:
+
+  = form_tag(show_avatar_path, name: :avatar ,:method => :post) do
+    = text_field_tag :nickname
+    = button_tag 'Go', type: :submit

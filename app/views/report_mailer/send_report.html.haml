@@ -1,0 +1,12 @@
+%table
+  %tr
+    %th nickname
+    %th email
+    %th количество записей за период
+    %th количество комментариев за период
+  - @report_ar.each do |user_info|
+    %tr
+      %td= user_info[0]
+      %td= user_info[1]
+      %td= user_info[2]
+      %td= user_info[3]
