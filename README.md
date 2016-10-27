@@ -36,3 +36,19 @@ heroku config:add CLOUDINARY_URL=cloudinary://API_KEY:API_SECRET@CLOUD_NAME
 heroku config:set SMTP_EMAIL=your email SMTP_PASS=your password
 
 Addon REDISTOGO installation and sidekiq worker configuration are also needed (see procfile for configure sidekiq)
+
+
+### Development mode
+(Defaultly works only for smtp.mail.ru,
+To change smtp configuration you need to change ActionMailer::Base.smtp_settings)
+
+To create reports/by_author.json , you need to create file settings.yml in folder 'config'
+in file set your email and your pass:
+
+```
+
+smtp:
+  smtp_email:
+  smtp_pass:
+
+```
