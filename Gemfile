@@ -35,7 +35,6 @@ gem 'cloudinary'
 gem "haml-rails", "~> 0.9"
 gem 'sidekiq'
 gem 'faker'
-gem 'jsonapi-parser', '~> 0.1.1.beta2'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
 group :development, :test do
