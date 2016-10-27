@@ -14,3 +14,4 @@ http://localhost:3000/api/v1/posts/46.json -i
 curl -H "Content-Type: application/json" -H "Authorization: 0b2a40f64959e2d8d712c23f90292104" -X POST \
 -d '{"title":"this_is_title","body":"this is body","published_at":"20.05.1999"}' http://localhost:3000/api/v1/posts.json
 
+heroku config:add CLOUDINARY_URL=cloudinary://API_KEY:API_SECRET@CLOUD_NAME

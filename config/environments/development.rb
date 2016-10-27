@@ -20,8 +20,8 @@ Rails.application.configure do
        :port               => 465,
        :tls                => true,
        :authentication     => 'plain',
-       :user_name          => SET['smtp']['smtp_email'],
-       :password           => SET['smtp']['smtp_pass'],
+       :user_name          => ENV['SMTP_EMAIL'],
+       :password           => ENV['SMTP_PASS'],
        :openssl_verify_mode  => 'none'
        }
 
