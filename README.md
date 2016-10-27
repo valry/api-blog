@@ -39,7 +39,7 @@ Addon REDISTOGO installation and sidekiq worker configuration are also needed (s
 
 
 ### Development mode
-(Defaultly works only for smtp.mail.ru,
+(Default works only for smtp.mail.ru,
 To change smtp configuration you need to change ActionMailer::Base.smtp_settings)
 
 To create reports/by_author.json , you need to create file settings.yml in folder 'config'
